@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do web-app</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./archive.html">Archive</a></li>
+        </ul>
+      </nav>
+      <main>
+        <div class="container">
+          <div class="left">
+            <div class="inputs">
+              <input
+                type="text"
+                placeholder="write hear your todo"
+                id="todo-inp"
+                required
+              />
+              <select id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+              </select>
+            </div>
+            <button id="addTodo">Add Todo</button>
+          </div>
+          <div class="right">
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Priority</th>
+                  <th>Status</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody class="todo-lists">
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./script/index.js"></script>
+  </body>
+</html>

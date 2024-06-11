@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do web-app</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="./styles/archive.css" />
+  </head>
+  <body>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./archive.html">Archive</a></li>
+        </ul>
+      </nav>
+      <main>
+        <div class="container">
+          <div class="right">
+            <div>
+              <select id="priority-filter">
+                <option value="all">All</option>
+                <option value="high">High</option>
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+              </select>
+              <select id="status-filter">
+                <option value="all">All</option>
+                <option value="Panding🔁">Panding🔁</option>
+                <option value="Completed✅">Completed✅</option>
+              </select>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Priority</th>
+                  <th>Status</th>
+                  <th>Restore</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody class="todo-lists">
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="./script/archive.js"></script>
+  </body>
+</html>
